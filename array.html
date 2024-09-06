@@ -1,0 +1,22 @@
+<html>
+    <body>
+   
+    <h2>array sort</h2>
+    <p>click button for</p>
+    <button onclick="ascending()">asending order</button>
+    <button onclick="descending()">descending order</button>
+    <p id="sui"></p>
+    <script>
+        var nums = [10,37,89,23,5,1,57,756] ;
+        document.getElementById("sui").innerHTML = nums;
+        function ascending() {
+            nums.sort(function(a,b){return a-b});
+            document.getElementById("sui").innerHTML = nums;
+        }
+        function descending() {
+            nums.sort(function(a,b){return b-a});
+            document.getElementById("sui").innerHTML = nums;
+        }
+    </script>
+        </body>
+</html>
